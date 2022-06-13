@@ -17,6 +17,10 @@ app.get('/', function(req,res) {
   res.render('home')
 })
 
+app.get('/prospects', function(req,res) {
+  res.render('prospects/prospectList')
+})
+
 //tell app to listen on port 3000
 
 app.listen(3000, function() {
