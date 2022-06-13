@@ -1,6 +1,8 @@
 //import modules
 import express from 'express'
 
+import { prospects } from "./data/data.js"
+
 //create express app
 
 const app = express()
