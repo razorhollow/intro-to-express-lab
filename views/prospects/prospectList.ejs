@@ -20,8 +20,8 @@
                 <p class="card-text">
                   <%= prospect.about %> 
                 </p>
-                <a href="mailto:<%= prospect.email %> " class="card-link"><%= prospect.email %> </a>
-                <a href="<%= prospect.phone %> " class="card-link"><%= prospect.phone %> </a>
+                <a href="mailto:<%= prospect.email %> " target="_blank" class="card-link"><%= prospect.email %> </a>
+                <a href="tel:<%= prospect.phone %> " class="card-link"><%= prospect.phone %> </a>
               </div>
             </div>
           <% }) %> 
