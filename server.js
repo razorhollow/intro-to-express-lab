@@ -1,7 +1,7 @@
 //import modules
 import express from 'express'
 
-import { prospects } from "./data/data.js"
+import { prospects } from "./data/prospects.js"
 
 //create express app
 
@@ -18,7 +18,9 @@ app.get('/', function(req,res) {
 })
 
 app.get('/prospects', function(req,res) {
-  res.render('prospects/prospectList')
+  res.render('prospects/prospectList.ejs', {
+    prospects: prospects
+  })
 })
 
 //tell app to listen on port 3000
